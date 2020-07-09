@@ -1,0 +1,33 @@
+{
+  "name": "chat-app",
+  "version": "1.0.0",
+  "description": "A Realtime chat app with NodeJS, SocketIO, UIKit",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "dev": "nodemon server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mostafamahmoudabdelaleem/chat-app.git"
+  },
+  "keywords": [
+    "NodeJS",
+    "SocketIO",
+    "UIKit"
+  ],
+  "author": "Mostafa Mahmoud",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mostafamahmoudabdelaleem/chat-app/issues"
+  },
+  "homepage": "https://github.com/mostafamahmoudabdelaleem/chat-app#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "moment": "^2.27.0",
+    "socketio": "^1.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
