@@ -57,3 +57,8 @@ function updateUsersList(users){
     ${users.map(user => `<li>${user.name}</li>`).join("")}
     `;
 }
+
+function leave(){
+    socket.close();
+    window.location = "/";
+}
