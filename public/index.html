@@ -20,26 +20,32 @@
                 </div>
             </div>
             
-            <form action="chat.html">
+            <form action="chat.html" autocomplete="off">
                 <div class="uk-card-body">
                 <fieldset class="uk-fieldset">
                         
                     <div class="uk-margin">
                         <label class="uk-form-label uk-text-muted" for="form-stacked-text">Username</label>
-                        <input name="username" class="uk-input uk-border-rounded" type="text" placeholder="Enter your name">
+                        <input autofocus required name="username" class="uk-input uk-border-rounded" type="text" placeholder="Enter your name">
                     </div>
             
                     <div class="uk-margin">
                         <label class="uk-form-label uk-text-muted" for="form-stacked-text">Room Name</label>
                         <select name="room" class="uk-select uk-border-rounded">
-                            <option>JS</option>
+                            <option>Level 1</option>
+                            <option>Level 2</option>
+                            <option>Level 3</option>
+                            <option>Level 4</option>
+                            <option>GP</option>
                             <option>Python</option>
+                            <option>PHP</option>
+                            <option>Javascript</option>
                         </select>
                     </div>
                 </fieldset>
                 </div>
                 <div class="uk-card-footer">
-                    <button type="submit" class="uk-button uk-button-secondary uk-width-1-1 uk-border-rounded">Join</button>
+                    <button type="submit" class="uk-button uk-button-primary uk-width-1-1 uk-border-rounded">Join</button>
                 </div>
             </form>
         </div>
