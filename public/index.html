@@ -3,12 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="static/img/logo.png" type="image/png" />
     <link rel="stylesheet" href="css/uikit.min.css" />
     <script src="js/uikit.min.js"></script>
     <script src="js/uikit-icons.min.js"></script>
     <title>Join Room</title>
 </head>
 <body>
-    
+    <div class="uk-container">
+        <div class="uk-card uk-card-default uk-width-1-2@m uk-align-center uk-margin-top uk-border-rounded">
+            <div class="uk-card-header">
+                <div class="uk-flex uk-flex-center" uk-grid>
+                    <a class="uk-logo" href="">
+                        <img src="static/img/logo.png" alt="logo"> Chatapp
+                    </a>
+                </div>
+            </div>
+            
+            <form action="chat.html">
+                <div class="uk-card-body">
+                <fieldset class="uk-fieldset">
+                        
+                    <div class="uk-margin">
+                        <label class="uk-form-label uk-text-muted" for="form-stacked-text">Username</label>
+                        <input name="username" class="uk-input uk-border-rounded" type="text" placeholder="Enter your name">
+                    </div>
+            
+                    <div class="uk-margin">
+                        <label class="uk-form-label uk-text-muted" for="form-stacked-text">Room Name</label>
+                        <select name="room" class="uk-select uk-border-rounded">
+                            <option>JS</option>
+                            <option>Python</option>
+                        </select>
+                    </div>
+                </fieldset>
+                </div>
+                <div class="uk-card-footer">
+                    <button type="submit" class="uk-button uk-button-secondary uk-width-1-1 uk-border-rounded">Join</button>
+                </div>
+            </form>
+        </div>
+    </div> 
 </body>
 </html>
