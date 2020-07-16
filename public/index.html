@@ -52,19 +52,21 @@
                 </fieldset>
                 </div>
                 <div class="uk-card-footer">
-                    <button type="submit" class="uk-button uk-button-primary uk-width-1-1 uk-border-rounded">Join</button>
+                    <button type="submit" class="uk-button uk-button-primary uk-width-1-1 uk-border-rounded">
+                        <span uk-icon="icon: sign-in"></span>
+                        Join
+                    </button>
+                    <div id="install" hidden>
+                        <hr class="uk-divider-icon" style="margin-top: 16px;">
+                        <button id="installButton" class="uk-button uk-button-secondary uk-width-1-1 uk-border-rounded">
+                            <span uk-icon="icon: download"></span>
+                            Install App
+                        </button>
+                    </div>
                 </div>
             </form>
         </div>
     </div>
-    <script>
-        if('serviceWorker' in navigator){
-            window.addEventListener('load', () => {
-                navigator.serviceWorker.register('./serviceworker.js')
-                    .then((reg) => console.log('Success: ', reg.scope))
-                    .catch((err) => console.log('Failure: ', err));
-            });
-        }
-    </script>
+    <script src="js/index.js"></script>
 </body>
 </html>
