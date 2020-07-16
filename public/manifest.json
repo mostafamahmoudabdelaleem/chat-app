@@ -10,12 +10,22 @@
     {
       "src": "./static/img/icon-512.png",
       "type": "image/png",
-      "sizes": "512x512",
+      "sizes": "512x512"
+    },
+    {
+      "src": "./static/img/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "./static/img/maskable_icon.png",
+      "type": "image/png",
+      "sizes": "2048x2048",
       "purpose": "any maskable"
     }
   ],
   "start_url": ".",
-  "display": "standalone",
+  "display": "minimal-ui",
   "theme_color": "#0f7ae5",
   "background_color": "#0f7ae5"
 }
