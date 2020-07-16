@@ -8,9 +8,10 @@
       "sizes": "1024x1024"
     },
     {
-      "src": "./static/img/logo-512.png",
+      "src": "./static/img/icon-512.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "512x512",
+      "purpose": "any maskable"
     }
   ],
   "start_url": ".",
