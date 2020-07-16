@@ -1,0 +1,15 @@
+{
+  "short_name": "ChatApp",
+  "name": "Realtime PWA Chatapp",
+  "icons": [
+    {
+      "src": "./static/img/logo.png",
+      "type": "image/png",
+      "sizes": "64x64 32x32 24x24 16x16 96x96"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#0f7ae5",
+  "background_color": "#ffffff"
+}
