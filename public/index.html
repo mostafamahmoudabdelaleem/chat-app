@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="static/img/logo.png" type="image/png" />
+    <meta name="theme-color" content="#0f7ae5" />
+    <meta
+      name="description"
+      content="Simple PWA realtime Chatapp"
+    />
+    <link rel="apple-touch-icon" href="./static/img/logo.png" />
+    <link rel="manifest" href="./manifest.json" />
     <link rel="stylesheet" href="css/uikit.min.css" />
     <script src="js/uikit.min.js"></script>
     <script src="js/uikit-icons.min.js"></script>
@@ -49,6 +56,15 @@
                 </div>
             </form>
         </div>
-    </div> 
+    </div>
+    <script>
+        if('serviceWorker' in navigator){
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./serviceworker.js')
+                    .then((reg) => console.log('Success: ', reg.scope))
+                    .catch((err) => console.log('Failure: ', err));
+            });
+        }
+    </script>
 </body>
 </html>
